@@ -1,4 +1,5 @@
-using CW2TrailService.Models;
+using CW2_TrailService.Models;
+
 
 var builder = WebApplication.CreateBuilder(args);
 

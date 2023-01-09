@@ -5856,11 +5856,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\danie\\OneDrive - University of Plymouth\\Documents\\COMP 2001 Information Management and Retrieval\\CW2 TrailService\\CW2TrailService.csproj",
+      "projectUniqueName": "C:\\Users\\danie\\OneDrive - University of Plymouth\\Documents\\COMP 2001 Information Management and Retrieval\\CW2TrailService\\CW2TrailService.csproj",
       "projectName": "CW2TrailService",
-      "projectPath": "C:\\Users\\danie\\OneDrive - University of Plymouth\\Documents\\COMP 2001 Information Management and Retrieval\\CW2 TrailService\\CW2TrailService.csproj",
+      "projectPath": "C:\\Users\\danie\\OneDrive - University of Plymouth\\Documents\\COMP 2001 Information Management and Retrieval\\CW2TrailService\\CW2TrailService.csproj",
       "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\danie\\OneDrive - University of Plymouth\\Documents\\COMP 2001 Information Management and Retrieval\\CW2 TrailService\\obj\\",
+      "outputPath": "C:\\Users\\danie\\OneDrive - University of Plymouth\\Documents\\COMP 2001 Information Management and Retrieval\\CW2TrailService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
