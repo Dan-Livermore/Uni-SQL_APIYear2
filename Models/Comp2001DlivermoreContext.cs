@@ -156,4 +156,6 @@ public partial class Comp2001DlivermoreContext : DbContext
     public DbSet<CW2_TrailService.Models.DB.DeleteOutput> DeleteOutput { get; set; } = default!;
 
     public DbSet<CW2_TrailService.Models.DB.UpdateOutput> UpdateOutput { get; set; } = default!;
+
+    public DbSet<CW2_TrailService.Models.DB.ReadOutput> ReadOutput { get; set; } = default!;
 }
