@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using CW2_TrailService.Models.DB;
 
 namespace CW2_TrailService.Models;
 
@@ -149,4 +150,6 @@ public partial class Comp2001DlivermoreContext : DbContext
     }
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+
+    public DbSet<CW2_TrailService.Models.DB.InsertOutput> InsertOutput { get; set; } = default!;
 }

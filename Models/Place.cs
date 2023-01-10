@@ -1,7 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 
 namespace CW2_TrailService.Models;
 
@@ -9,19 +7,13 @@ public partial class Place
 {
     public int PlaceId { get; set; }
 
-    public string? RouteType { get; set; } = null;
-    [MaxLength(50)]
-    [Unicode(false)]
+    public string? RouteType { get; set; }
 
-    public string? Area { get; set; } = null;
-    [MaxLength(255)]
-    [Unicode(false)]
+    public string? Area { get; set; }
 
-    public string? Difficulty { get; set; } = null;
-    [MaxLength(50)]
-    [Unicode(false)]
+    public string? Difficulty { get; set; }
 
-    public int? DetailsId { get; set; } = null;
+    public int? DetailsId { get; set; }
 
     public virtual Detail? Details { get; set; }
 

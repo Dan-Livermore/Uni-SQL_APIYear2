@@ -5,7 +5,7 @@ using Microsoft.Extensions.Configuration.Json;
 using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Services.AddDbContext<Comp2001DlivermoreContext>();
 // Add services to the container.
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
