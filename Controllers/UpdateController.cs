@@ -13,22 +13,24 @@ namespace CW2_TrailService.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class DeleteController : ControllerBase
+    public class UpdateController : ControllerBase
     {
         private readonly Comp2001DlivermoreContext _context;
 
-        public DeleteController(Comp2001DlivermoreContext context)
+        public UpdateController(Comp2001DlivermoreContext context)
         {
             _context = context;
         }
 
-        // GET: api/Delete
+        // GET: api/Update
         [HttpPost]
-        public string GetInsertOutput(DeleteInput input)
+        public string GetUpdateOutput(UpdateInput input)
         {
-            var Procedure = _context.Database.ExecuteSqlRaw("EXEC CW2.DeleteData " +
-                "@Name" + " , " + "@Type" + " , " + "@Area" + " , " + "@Difficulty" + " , " + "@NewMarkers" + " , " + "@Distance" + " , " + "@Elevation",
+            var Procedure = _context.Database.ExecuteSqlRaw("EXEC CW2.UpdateData " +
+                "@ID" + " , " + "@Name" + " , " + "@Description" + " , " + "@Type" + " , " + "@Area" + " , " + "@Difficulty" + " , " + "@NewMarkers" + " , " + "@Distance" + " , " + "@Elevation",
+                new SqlParameter("@ID", input.ID),
                 new SqlParameter("@Name", input.Name),
+                new SqlParameter("@Description", input.Description),
                 new SqlParameter("@Type", input.Type),
                 new SqlParameter("@Area", input.Area),
                 new SqlParameter("@Difficulty", input.Difficulty),
@@ -38,14 +40,14 @@ namespace CW2_TrailService.Controllers
 
 
 
-            string output = "User has removed the " + input.Name.ToString() + " trail to the database";
+            string output = "User has updated the " + input.Name.ToString() + " trail in the database";
             return output;
         }
 
 
-        private bool DeleteOutputExists(int id)
+        private bool UpdateOutputExists(int id)
         {
-            return (_context.InsertOutput?.Any(e => e.ID == id)).GetValueOrDefault();
+            return (_context.UpdateOutput?.Any(e => e.ID == id)).GetValueOrDefault();
         }
     }
 }
