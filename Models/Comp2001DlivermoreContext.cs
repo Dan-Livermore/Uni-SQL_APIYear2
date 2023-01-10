@@ -152,4 +152,6 @@ public partial class Comp2001DlivermoreContext : DbContext
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
 
     public DbSet<CW2_TrailService.Models.DB.InsertOutput> InsertOutput { get; set; } = default!;
+
+    public DbSet<CW2_TrailService.Models.DB.DeleteOutput> DeleteOutput { get; set; } = default!;
 }
