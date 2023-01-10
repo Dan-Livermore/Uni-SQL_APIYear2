@@ -11,29 +11,29 @@ namespace CW2_TrailService.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ReadController : ControllerBase
+    public class ReadAccountsController : ControllerBase
     {
         private readonly Comp2001DlivermoreContext _context;
 
-        public ReadController(Comp2001DlivermoreContext context)
+        public ReadAccountsController(Comp2001DlivermoreContext context)
         {
             _context = context;
         }
 
-        // GET: api/Read
+        // GET: api/ReadAccounts
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Trail>>> GetTrails()
+        public async Task<ActionResult<IEnumerable<Account>>> GetAccounts()
         {
-          if (_context.Trails == null)
+          if (_context.Accounts == null)
           {
               return NotFound();
           }
-            return await _context.Trails.ToListAsync();
+            return await _context.Accounts.ToListAsync();
         }
 
-        private bool TrailExists(int id)
+        private bool AccountExists(string id)
         {
-            return (_context.Trails?.Any(e => e.TrailId == id)).GetValueOrDefault();
+            return (_context.Accounts?.Any(e => e.Email == id)).GetValueOrDefault();
         }
     }
 }
