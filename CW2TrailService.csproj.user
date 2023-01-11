@@ -12,5 +12,6 @@
     <WebStackScaffolding_DbContextTypeFullName>CW2_TrailService.Models.Comp2001DlivermoreContext</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <WebStackScaffolding_DbContextDialogWidth>650.4</WebStackScaffolding_DbContextDialogWidth>
+    <NameOfLastUsedPublishProfile>C:\Users\danie\OneDrive - University of Plymouth\Documents\COMP 2001 Information Management and Retrieval\CW2TrailService\Properties\PublishProfiles\FolderProfile1.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>
