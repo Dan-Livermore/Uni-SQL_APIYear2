@@ -12,7 +12,7 @@
 
 - The API can perform the CRUD functions that it recieves from the stored procedures in the database.
 - The database stores data for the trails and the user's who have created them, as shown below in the following Diagram.
-- ![Entity Relationship Diagram](img.jpg "Entity Relationship Diagram")
+- ![Entity Relationship Diagram](img.png "Entity Relationship Diagram")
 ### Functions
 
 - Connects to the improved SQL server database under the schema CW2.
